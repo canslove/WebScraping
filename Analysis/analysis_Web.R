@@ -268,7 +268,7 @@ d_artist_sp = tolower(df_sp$artist)
 d_artist_yt = tolower(df_yt$artist)
 d_artist_bb = tolower(df_bb$artist)
 
-text(x=0.5, y=0.5, "Artist who is registered in Top100 more than 30 times by spotify")
+text(x=0.5, y=0.5, "Artist who is registered in Top100 more than 30 times")
 wordcloud(d_artist_sp, min.freq = 30, scale = c(2,0.5), random.color = TRUE, color = pal) #, main='Title')
 wordcloud(d_artist_yt, min.freq = 30, scale = c(2,0.5), random.color = TRUE, color = pal)
 wordcloud(d_artist_bb, min.freq = 30, scale = c(2,0.5), random.color = TRUE, color = pal)
